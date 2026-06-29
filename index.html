@@ -1,0 +1,335 @@
+<!DOCTYPE html>
+<html lang="kk">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="SkillForge – онлайн білім беру платформасы. Курстар, менторлар және сертификаттар.">
+  <title>SkillForge – Онлайн білім беру платформасы</title>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+  <!-- Жоғарғы навигация -->
+  <header class="navbar">
+    <div class="container navbar__inner">
+      <a href="index.html" class="logo">Skill<span>Forge</span></a>
+      <nav>
+        <ul class="nav-links">
+          <li><a href="index.html">Басты бет</a></li>
+          <li><a href="courses.html">Курстар</a></li>
+          <li><a href="about.html">Біз туралы</a></li>
+          <li><a href="contact.html">Байланыс</a></li>
+        </ul>
+      </nav>
+      <button class="nav-toggle" aria-label="Мәзір">☰</button>
+    </div>
+  </header>
+
+  <!-- Ішкі навигация (anchor links) -->
+  <nav class="page-nav" aria-label="Бет ішіндегі навигация">
+    <div class="container page-nav__inner">
+      <a href="#hero">Басты</a>
+      <a href="#stats">Статистика</a>
+      <a href="#courses">Курстар</a>
+      <a href="#advantages">Артықшылықтар</a>
+      <a href="#testimonials">Пікірлер</a>
+      <a href="#video">Бейне</a>
+      <a href="#podcast">Подкаст</a>
+    </div>
+  </nav>
+
+  <!-- Hero баннер -->
+  <section class="hero" id="hero">
+    <div class="hero__bg" aria-hidden="true"></div>
+    <div class="container hero__content">
+      <div class="hero__text">
+        <h1>Болашақ мамандықты SkillForge-пен меңгеріңіз</h1>
+        <p>Қазақстанның заманауи онлайн білім беру платформасы. Сапалы курстар, тәжірибeli менторлар және халықаралық стандарттағы сертификаттар.</p>
+        <div class="hero__buttons">
+          <a href="courses.html" class="btn btn--white">Курстарды көру</a>
+          <a href="#video" class="btn btn--outline" style="border-color:#fff;color:#fff;">Платформа туралы</a>
+        </div>
+      </div>
+      <div class="hero__visual">
+        <div class="hero__card">
+          <h3>🔥 Танымал курстар</h3>
+          <div class="hero__card-item">💻 Python бағдарламалау — 4.9★</div>
+          <div class="hero__card-item">🎨 UI/UX дизайн — 4.8★</div>
+          <div class="hero__card-item">🤖 Жасанды интеллект — 4.9★</div>
+          <div class="hero__card-item">📈 Digital маркетинг — 4.7★</div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Статистика -->
+  <section class="stats-bar" id="stats">
+    <div class="container">
+      <div class="stats-grid">
+        <div class="stat-item">
+          <strong data-count="12500" data-suffix="+">0</strong>
+          <span>Студент</span>
+        </div>
+        <div class="stat-item">
+          <strong data-count="180" data-suffix="+">0</strong>
+          <span>Курс</span>
+        </div>
+        <div class="stat-item">
+          <strong data-count="45" data-suffix="+">0</strong>
+          <span>Ментор</span>
+        </div>
+        <div class="stat-item">
+          <strong data-count="98" data-suffix="%">0</strong>
+          <span>Қанағаттану</span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Танымал курстар -->
+  <section class="section" id="courses">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-label">Курстар</span>
+        <h2>Танымал курстар</h2>
+        <p>Ең көп сұранысқа ие бағыттар — сапалы контент пен практикалық тапсырмалар</p>
+      </div>
+      <div class="courses-grid">
+        <article class="course-card">
+          <div class="course-card__img">
+            <img src="images/course1.jpg" alt="Python бағдарламалау курсы">
+            <span class="course-card__badge">Бestseller</span>
+          </div>
+          <div class="course-card__body">
+            <div class="course-card__meta">
+              <span>⏱ 12 апта</span>
+              <span>⭐ 4.9</span>
+            </div>
+            <h3>Python бағдарламалау</h3>
+            <p>Нөлден бастап веб-әзірлеуге дейін. Практикалық жобалар мен портфолио.</p>
+            <div class="course-card__footer">
+              <span class="course-card__price">29 990 ₸</span>
+              <a href="courses.html" class="btn btn--primary btn--sm">Толығырақ</a>
+            </div>
+          </div>
+        </article>
+        <article class="course-card">
+          <div class="course-card__img">
+            <img src="images/course2.jpg" alt="Web Development курсы">
+            <span class="course-card__badge">Жаңа</span>
+          </div>
+          <div class="course-card__body">
+            <div class="course-card__meta">
+              <span>⏱ 10 апта</span>
+              <span>⭐ 4.8</span>
+            </div>
+            <h3>Web Development</h3>
+            <p>HTML, CSS, JavaScript және React. Нақты жобалармен практика.</p>
+            <div class="course-card__footer">
+              <span class="course-card__price">34 990 ₸</span>
+              <a href="courses.html" class="btn btn--primary btn--sm">Толығырақ</a>
+            </div>
+          </div>
+        </article>
+        <article class="course-card">
+          <div class="course-card__img">
+            <img src="images/hero.jpg" alt="UI/UX дизайн курсы">
+          </div>
+          <div class="course-card__body">
+            <div class="course-card__meta">
+              <span>⏱ 8 апта</span>
+              <span>⭐ 4.9</span>
+            </div>
+            <h3>UI/UX дизайн</h3>
+            <p>Figma, дизайн жүйелері және пайдаланушы тәжірибесін жобалау.</p>
+            <div class="course-card__footer">
+              <span class="course-card__price">27 990 ₸</span>
+              <a href="courses.html" class="btn btn--primary btn--sm">Толығырақ</a>
+            </div>
+          </div>
+        </article>
+      </div>
+      <div style="text-align:center;margin-top:2.5rem;">
+        <a href="courses.html" class="btn btn--primary">Барлық курстарды көру →</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- Платформа артықшылықтары -->
+  <section class="section section--gray" id="advantages">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-label">Неге біз?</span>
+        <h2>SkillForge артықшылықтары</h2>
+        <p>Біз студенттерге тек теория емес, нақты нәтиже береміз</p>
+      </div>
+      <div class="advantages-grid">
+        <div class="advantage-card">
+          <div class="advantage-card__icon">🎓</div>
+          <h3>Сертификат</h3>
+          <p>Курс аяқталғаннан кейін халықаралық форматтағы цифрлық сертификат.</p>
+        </div>
+        <div class="advantage-card">
+          <div class="advantage-card__icon">👨‍🏫</div>
+          <h3>Тәжірибeli менторлар</h3>
+          <p>IT компанияларында жұмыс істейтін практик мамандар оқытады.</p>
+        </div>
+        <div class="advantage-card">
+          <div class="advantage-card__icon">💼</div>
+          <h3>Жұмысқа орналасу</h3>
+          <p>Портфолио мен mock interview арқылы жұмысқа дайындаймыз.</p>
+        </div>
+        <div class="advantage-card">
+          <div class="advantage-card__icon">📱</div>
+          <h3>Кез келген уақытта</h3>
+          <p>Мобильді қосымша арқылы офлайн режимде де оқуға болады.</p>
+        </div>
+        <div class="advantage-card">
+          <div class="advantage-card__icon">🔄</div>
+          <h3>Өмір бойы қолжетімді</h3>
+          <p>Курс материалдарына шектеусіз кіру — жаңартулар тегін.</p>
+        </div>
+        <div class="advantage-card">
+          <div class="advantage-card__icon">💬</div>
+          <h3>Қауымдастық</h3>
+          <p>10 000+ студенттен тұратын белсенді Discord қауымдастығы.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Студент пікірлері -->
+  <section class="section" id="testimonials">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-label">Пікірлер</span>
+        <h2>Студенттер не дейді?</h2>
+        <p>SkillForge түлектерінің нақты тәжірибелері</p>
+      </div>
+      <div class="testimonials-grid">
+        <blockquote class="testimonial-card">
+          <p>Python курсынан кейін 3 ай ішінде Junior Developer лауазымына орналастым. Менторлар 24/7 қолдау көрсетті!</p>
+          <div class="testimonial-author">
+            <div class="testimonial-author__avatar">АҚ</div>
+            <div>
+              <strong>Айдана Қасымова</strong>
+              <span>Python Developer, Astana Hub</span>
+            </div>
+          </div>
+        </blockquote>
+        <blockquote class="testimonial-card">
+          <p>UI/UX курсы менің карьерамды өзгертті. Практикалық тапсырмалар нақты жобаларға дайындады.</p>
+          <div class="testimonial-author">
+            <div class="testimonial-author__avatar">ЕБ</div>
+            <div>
+              <strong>Ерлан Бекенов</strong>
+              <span>Product Designer, Kaspi</span>
+            </div>
+          </div>
+        </blockquote>
+        <blockquote class="testimonial-card">
+          <p>AI курсы керемет! Machine Learning негіздерін меңгеріп, стартап іске қостым. SkillForge — ең жақсы инвестиция!</p>
+          <div class="testimonial-author">
+            <div class="testimonial-author__avatar">МС</div>
+            <div>
+              <strong>Мадина Сейтовa</strong>
+              <span>AI Startup Founder</span>
+            </div>
+          </div>
+        </blockquote>
+      </div>
+    </div>
+  </section>
+
+  <!-- Бейне -->
+  <section class="section section--gray" id="video">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-label">Бейне</span>
+        <h2>SkillForge платформасын таныстыру</h2>
+        <p>2 минутта платформамыздың мүмкіндіктерін біліңіз</p>
+      </div>
+      <div class="video-wrapper">
+        <iframe
+          src="https://www.youtube.com/watch?v=NdkQAMTKzMs"
+          title="SkillForge платформасы — білім беру бейнесі"
+          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+          allowfullscreen>
+        </iframe>
+      </div>
+    </div>
+  </section>
+
+  <!-- Подкаст / Аудио -->
+  <section class="section" id="podcast">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-label">Подкаст</span>
+        <h2>Мотивациялық подкаст</h2>
+        <p>IT саласындағы карьера мен оқу стратегиялары туралы</p>
+      </div>
+      <div class="audio-player">
+        <div class="audio-player__info">
+          <h3>🎙 SkillForge Podcast — 1-шы выпуск</h3>
+          <p>«IT мамандығын қалай таңдау керек?» — ментор Асхат Нұрланұлы</p>
+        </div>
+        <audio controls preload="metadata">
+          <source src="audio/podcast.mp3" type="audio/mpeg">
+          Браузеріңіз аудио ойnatуды қолдамайды.
+        </audio>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer__grid">
+        <div class="footer__about">
+          <a href="index.html" class="logo">Skill<span>Forge</span></a>
+          <p>SkillForge — Қазақстанның заманауи онлайн білім беру платформасы. Біз әр студентке сапалы білім мен нақты нәтиже береміз.</p>
+          <div class="social-links">
+            <a href="#" aria-label="Instagram">📷</a>
+            <a href="#" aria-label="Facebook">📘</a>
+            <a href="#" aria-label="YouTube">▶️</a>
+            <a href="#" aria-label="Telegram">✈️</a>
+            <a href="#" aria-label="LinkedIn">💼</a>
+          </div>
+        </div>
+        <div>
+          <h4>Навигация</h4>
+          <ul>
+            <li><a href="index.html">Басты бет</a></li>
+            <li><a href="courses.html">Курстар</a></li>
+            <li><a href="about.html">Біз туралы</a></li>
+            <li><a href="contact.html">Байланыс</a></li>
+          </ul>
+        </div>
+        <div>
+          <h4>Курстар</h4>
+          <ul>
+            <li><a href="courses.html">Бағдарламалау</a></li>
+            <li><a href="courses.html">Дизайн</a></li>
+            <li><a href="courses.html">Маркетинг</a></li>
+            <li><a href="courses.html">Жасанды интеллект</a></li>
+          </ul>
+        </div>
+        <div>
+          <h4>Байланыс</h4>
+          <ul>
+            <li><a href="tel:+77271234567">+7 (727) 123-45-67</a></li>
+            <li><a href="mailto:info@skillforge.kz">info@skillforge.kz</a></li>
+            <li>Алматы, Абай 52</li>
+          </ul>
+        </div>
+      </div>
+      <div class="footer__bottom">
+        © 2026 SkillForge. Барлық құқықтар қорғалған.
+      </div>
+    </div>
+  </footer>
+
+  <button class="scroll-top" aria-label="Жоғарыға">↑</button>
+  <script src="js/script.js"></script>
+</body>
+</html>

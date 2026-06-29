@@ -1,0 +1,261 @@
+<!DOCTYPE html>
+<html lang="kk">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="SkillForge курстары — бағдарламалау, дизайн, маркетинг, AI.">
+  <title>Курстар — SkillForge</title>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+  <header class="navbar">
+    <div class="container navbar__inner">
+      <a href="index.html" class="logo">Skill<span>Forge</span></a>
+      <nav>
+        <ul class="nav-links">
+          <li><a href="index.html">Басты бет</a></li>
+          <li><a href="courses.html">Курстар</a></li>
+          <li><a href="about.html">Біз туралы</a></li>
+          <li><a href="contact.html">Байланыс</a></li>
+        </ul>
+      </nav>
+      <button class="nav-toggle" aria-label="Мәзір">☰</button>
+    </div>
+  </header>
+
+  <nav class="page-nav" aria-label="Бет ішіндегі навигация">
+    <div class="container page-nav__inner">
+      <a href="#search">Іздеу</a>
+      <a href="#catalog">Каталог</a>
+      <a href="#programming">Бағдарламалау</a>
+      <a href="#design">Дизайн</a>
+      <a href="#marketing">Маркетинг</a>
+      <a href="#ai">AI</a>
+    </div>
+  </nav>
+
+  <section class="page-hero">
+    <div class="container">
+      <h1>Біздің курстар</h1>
+      <p>180+ курс — бағдарламалаудан AI-ға дейін. Өз мамандығыңызды таңдаңыз және оқуды бастаңыз.</p>
+    </div>
+  </section>
+
+  <!-- Іздеу және фильтр -->
+  <section class="section" id="search">
+    <div class="container">
+      <div class="search-bar">
+        <input type="search" id="courseSearch" placeholder="Курс атауын іздеу... (мысалы: Python, Figma)">
+      </div>
+      <div class="filter-tags">
+        <button class="filter-tag active" data-filter="all">Барлығы</button>
+        <button class="filter-tag" data-filter="programming">Бағдарламалау</button>
+        <button class="filter-tag" data-filter="design">Дизайн</button>
+        <button class="filter-tag" data-filter="marketing">Маркетинг</button>
+        <button class="filter-tag" data-filter="ai">Жасанды интеллект</button>
+      </div>
+    </div>
+  </section>
+
+  <!-- Курс каталогы -->
+  <section class="section section--gray" id="catalog" style="padding-top:0;">
+    <div class="container">
+      <div class="courses-grid">
+
+        <!-- Programming -->
+        <article class="course-card" data-category="programming" id="programming">
+          <div class="course-card__img">
+            <img src="images/course1.jpg" alt="Python бағдарламалау">
+            <span class="course-card__badge">Bestseller</span>
+          </div>
+          <div class="course-card__body">
+            <div class="course-card__meta"><span>⏱ 12 апта</span><span>⭐ 4.9</span><span>👥 2 400</span></div>
+            <h3>Python бағдарламалау</h3>
+            <p>Нөлден бастап Django, Data Science және автоматтандыруға дейін.</p>
+            <div class="course-card__footer">
+              <span class="course-card__price">29 990 ₸</span>
+              <button class="btn btn--primary btn--sm enroll-btn" data-course="Python бағдарламалау">Тіркелу</button>
+            </div>
+          </div>
+        </article>
+
+        <article class="course-card" data-category="programming">
+          <div class="course-card__img">
+            <img src="images/course2.jpg" alt="Web Development">
+            <span class="course-card__badge">Жаңа</span>
+          </div>
+          <div class="course-card__body">
+            <div class="course-card__meta"><span>⏱ 10 апта</span><span>⭐ 4.8</span><span>👥 1 800</span></div>
+            <h3>Full-Stack Web Development</h3>
+            <p>HTML, CSS, JavaScript, React, Node.js — толық стек әзірлеуші.</p>
+            <div class="course-card__footer">
+              <span class="course-card__price">34 990 ₸</span>
+              <button class="btn btn--primary btn--sm enroll-btn" data-course="Full-Stack Web Development">Тіркелу</button>
+            </div>
+          </div>
+        </article>
+
+        <article class="course-card" data-category="programming">
+          <div class="course-card__img">
+            <img src="images/hero.jpg" alt="JavaScript">
+          </div>
+          <div class="course-card__body">
+            <div class="course-card__meta"><span>⏱ 8 апта</span><span>⭐ 4.7</span><span>👥 1 200</span></div>
+            <h3>JavaScript Masterclass</h3>
+            <p>ES6+, асинхронды код, DOM, API интеграциялары.</p>
+            <div class="course-card__footer">
+              <span class="course-card__price">24 990 ₸</span>
+              <button class="btn btn--primary btn--sm enroll-btn" data-course="JavaScript Masterclass">Тіркелу</button>
+            </div>
+          </div>
+        </article>
+
+        <!-- Design -->
+        <article class="course-card" data-category="design" id="design">
+          <div class="course-card__img">
+            <img src="images/course1.jpg" alt="UI/UX дизайн">
+            <span class="course-card__badge">Танымал</span>
+          </div>
+          <div class="course-card__body">
+            <div class="course-card__meta"><span>⏱ 8 апта</span><span>⭐ 4.9</span><span>👥 1 600</span></div>
+            <h3>UI/UX дизайн</h3>
+            <p>Figma, прототиптеу, дизайн жүйелері, usability тестілеу.</p>
+            <div class="course-card__footer">
+              <span class="course-card__price">27 990 ₸</span>
+              <button class="btn btn--primary btn--sm enroll-btn" data-course="UI/UX дизайн">Тіркелу</button>
+            </div>
+          </div>
+        </article>
+
+        <article class="course-card" data-category="design">
+          <div class="course-card__img">
+            <img src="images/course2.jpg" alt="Graphic Design">
+          </div>
+          <div class="course-card__body">
+            <div class="course-card__meta"><span>⏱ 6 апта</span><span>⭐ 4.6</span><span>👥 900</span></div>
+            <h3>Graphic Design</h3>
+            <p>Adobe Photoshop, Illustrator — брендинг және визуал коммуникация.</p>
+            <div class="course-card__footer">
+              <span class="course-card__price">22 990 ₸</span>
+              <button class="btn btn--primary btn--sm enroll-btn" data-course="Graphic Design">Тіркелу</button>
+            </div>
+          </div>
+        </article>
+
+        <!-- Marketing -->
+        <article class="course-card" data-category="marketing" id="marketing">
+          <div class="course-card__img">
+            <img src="images/hero.jpg" alt="Digital Marketing">
+          </div>
+          <div class="course-card__body">
+            <div class="course-card__meta"><span>⏱ 7 апта</span><span>⭐ 4.7</span><span>👥 1 100</span></div>
+            <h3>Digital Marketing</h3>
+            <p>SMM, SEO, Google Ads, контент-маркетинг стратегиялары.</p>
+            <div class="course-card__footer">
+              <span class="course-card__price">19 990 ₸</span>
+              <button class="btn btn--primary btn--sm enroll-btn" data-course="Digital Marketing">Тіркелу</button>
+            </div>
+          </div>
+        </article>
+
+        <article class="course-card" data-category="marketing">
+          <div class="course-card__img">
+            <img src="images/course1.jpg" alt="SMM Pro">
+          </div>
+          <div class="course-card__body">
+            <div class="course-card__meta"><span>⏱ 5 апта</span><span>⭐ 4.5</span><span>👥 750</span></div>
+            <h3>SMM Pro</h3>
+            <p>Instagram, TikTok, LinkedIn — контент жоспары мен аналитика.</p>
+            <div class="course-card__footer">
+              <span class="course-card__price">15 990 ₸</span>
+              <button class="btn btn--primary btn--sm enroll-btn" data-course="SMM Pro">Тіркелу</button>
+            </div>
+          </div>
+        </article>
+
+        <!-- AI -->
+        <article class="course-card" data-category="ai" id="ai">
+          <div class="course-card__img">
+            <img src="images/course2.jpg" alt="Machine Learning">
+            <span class="course-card__badge">Hot</span>
+          </div>
+          <div class="course-card__body">
+            <div class="course-card__meta"><span>⏱ 14 апта</span><span>⭐ 4.9</span><span>👥 980</span></div>
+            <h3>Machine Learning</h3>
+            <p>Scikit-learn, TensorFlow, нейрондық желілер, ML жобалары.</p>
+            <div class="course-card__footer">
+              <span class="course-card__price">39 990 ₸</span>
+              <button class="btn btn--primary btn--sm enroll-btn" data-course="Machine Learning">Тіркелу</button>
+            </div>
+          </div>
+        </article>
+
+        <article class="course-card" data-category="ai">
+          <div class="course-card__img">
+            <img src="images/hero.jpg" alt="ChatGPT & Prompt Engineering">
+            <span class="course-card__badge">2026</span>
+          </div>
+          <div class="course-card__body">
+            <div class="course-card__meta"><span>⏱ 4 апта</span><span>⭐ 4.8</span><span>👥 2 100</span></div>
+            <h3>ChatGPT & Prompt Engineering</h3>
+            <p>AI құралдарын тиімді пайдалану, промпт жазу, автоматтандыру.</p>
+            <div class="course-card__footer">
+              <span class="course-card__price">12 990 ₸</span>
+              <button class="btn btn--primary btn--sm enroll-btn" data-course="ChatGPT & Prompt Engineering">Тіркелу</button>
+            </div>
+          </div>
+        </article>
+
+      </div>
+    </div>
+  </section>
+
+  <footer class="footer">
+    <div class="container">
+      <div class="footer__grid">
+        <div class="footer__about">
+          <a href="index.html" class="logo">Skill<span>Forge</span></a>
+          <p>SkillForge — Қазақстанның заманауи онлайн білім беру платформасы.</p>
+          <div class="social-links">
+            <a href="#" aria-label="Instagram">📷</a>
+            <a href="#" aria-label="Facebook">📘</a>
+            <a href="#" aria-label="YouTube">▶️</a>
+            <a href="#" aria-label="Telegram">✈️</a>
+            <a href="#" aria-label="LinkedIn">💼</a>
+          </div>
+        </div>
+        <div>
+          <h4>Навигация</h4>
+          <ul>
+            <li><a href="index.html">Басты бет</a></li>
+            <li><a href="courses.html">Курстар</a></li>
+            <li><a href="about.html">Біз туралы</a></li>
+            <li><a href="contact.html">Байланыс</a></li>
+          </ul>
+        </div>
+        <div>
+          <h4>Категориялар</h4>
+          <ul>
+            <li><a href="#programming">Бағдарламалау</a></li>
+            <li><a href="#design">Дизайн</a></li>
+            <li><a href="#marketing">Маркетинг</a></li>
+            <li><a href="#ai">Жасанды интеллект</a></li>
+          </ul>
+        </div>
+        <div>
+          <h4>Байланыс</h4>
+          <ul>
+            <li><a href="tel:+77271234567">+7 (727) 123-45-67</a></li>
+            <li><a href="mailto:info@skillforge.kz">info@skillforge.kz</a></li>
+          </ul>
+        </div>
+      </div>
+      <div class="footer__bottom">© 2026 SkillForge. Барлық құқықтар қорғалған.</div>
+    </div>
+  </footer>
+
+  <button class="scroll-top" aria-label="Жоғарыға">↑</button>
+  <script src="js/script.js"></script>
+</body>
+</html>
