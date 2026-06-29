@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="kk">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="SkillForge байланыс — форма, мекенжай, телефон.">
+  <title>Байланыс — SkillForge</title>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+  <header class="navbar">
+    <div class="container navbar__inner">
+      <a href="index.html" class="logo">Skill<span>Forge</span></a>
+      <nav>
+        <ul class="nav-links">
+          <li><a href="index.html">Басты бет</a></li>
+          <li><a href="courses.html">Курстар</a></li>
+          <li><a href="about.html">Біз туралы</a></li>
+          <li><a href="contact.html">Байланыс</a></li>
+        </ul>
+      </nav>
+      <button class="nav-toggle" aria-label="Мәзір">☰</button>
+    </div>
+  </header>
+
+  <nav class="page-nav" aria-label="Бет ішіндегі навигация">
+    <div class="container page-nav__inner">
+      <a href="#info">Ақпарат</a>
+      <a href="#contactForm">Форма</a>
+      <a href="#map">Карта</a>
+    </div>
+  </nav>
+
+  <section class="page-hero">
+    <div class="container">
+      <h1>Байланыс</h1>
+      <p>Сұрақтарыңыз бар ма? Біз 24 сaat ішinde жауап береміз.</p>
+    </div>
+  </section>
+
+  <!-- Байланыс ақпараты және форма -->
+  <section class="section" id="info">
+    <div class="container">
+      <div class="contact-grid">
+        <aside class="contact-info-card">
+          <h3>Бізбен байланысыңыз</h3>
+          <p>Курстар, тіркелу немесе серіктестік туралы сұрақтар үшін бізге хабарласыңыз.</p>
+
+          <div class="contact-detail">
+            <div class="contact-detail__icon">📍</div>
+            <div>
+              <strong>Мекенжай</strong>
+              <span>Қазақстан, Алматы қ., Абай даңғылы 52, 3-қабат</span>
+            </div>
+          </div>
+          <div class="contact-detail">
+            <div class="contact-detail__icon">📞</div>
+            <div>
+              <strong>Телефон</strong>
+              <span>+7 (727) 123-45-67</span>
+            </div>
+          </div>
+          <div class="contact-detail">
+            <div class="contact-detail__icon">✉️</div>
+            <div>
+              <strong>Email</strong>
+              <span>info@skillforge.kz</span>
+            </div>
+          </div>
+          <div class="contact-detail">
+            <div class="contact-detail__icon">🕐</div>
+            <div>
+              <strong>Жұмыс уақыты</strong>
+              <span>Дс–Жс: 09:00 – 20:00</span>
+            </div>
+          </div>
+        </aside>
+
+        <form class="contact-form" id="contactForm">
+          <h3>Хабарлама жіберу</h3>
+          <div class="form-group">
+            <label for="name">Аты-жөні *</label>
+            <input type="text" id="name" name="name" placeholder="Мысалы: Нұрлан Бекет" required>
+          </div>
+          <div class="form-group">
+            <label for="email">Email *</label>
+            <input type="email" id="email" name="email" placeholder="example@mail.kz" required>
+          </div>
+          <div class="form-group">
+            <label for="subject">Тақырып *</label>
+            <input type="text" id="subject" name="subject" placeholder="Курс туралы сұрақ" required>
+          </div>
+          <div class="form-group">
+            <label for="message">Хабарлама *</label>
+            <textarea id="message" name="message" placeholder="Сұрағыңызды мұнда жазыңыз..." required></textarea>
+          </div>
+          <button type="submit" class="btn btn--primary" style="width:100%">Жіберу</button>
+          <div class="form-success">✅ Хабарлама сәтті жіберілді! Жақын арада жауап береміз.</div>
+        </form>
+      </div>
+    </div>
+  </section>
+
+  <!-- Google Maps -->
+  <section class="section section--gray" id="map" style="padding-top:0;">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-label">Карта</span>
+        <h2>Біздің орналасқан жеріміз</h2>
+      </div>
+      <div class="map-wrapper">
+        <iframe
+          src="https://maps.google.com/maps?q=Almaty+Abay+Avenue+52&t=&z=15&ie=UTF8&iwloc=&output=embed"
+          title="SkillForge офис — Алматы, Абай 52"
+          loading="lazy"
+          referrerpolicy="no-referrer-when-downgrade">
+        </iframe>
+      </div>
+    </div>
+  </section>
+
+  <footer class="footer">
+    <div class="container">
+      <div class="footer__grid">
+        <div class="footer__about">
+          <a href="index.html" class="logo">Skill<span>Forge</span></a>
+          <p>SkillForge — Қазақстанның заманауи онлайн білім беру платформасы.</p>
+          <div class="social-links">
+            <a href="#" aria-label="Instagram">📷</a>
+            <a href="#" aria-label="Facebook">📘</a>
+            <a href="#" aria-label="YouTube">▶️</a>
+            <a href="#" aria-label="Telegram">✈️</a>
+            <a href="#" aria-label="LinkedIn">💼</a>
+          </div>
+        </div>
+        <div>
+          <h4>Навигация</h4>
+          <ul>
+            <li><a href="index.html">Басты бет</a></li>
+            <li><a href="courses.html">Курстар</a></li>
+            <li><a href="about.html">Біз туралы</a></li>
+            <li><a href="contact.html">Байланыс</a></li>
+          </ul>
+        </div>
+        <div>
+          <h4>Курстар</h4>
+          <ul>
+            <li><a href="courses.html">Бағдарламалау</a></li>
+            <li><a href="courses.html">Дизайн</a></li>
+            <li><a href="courses.html">Маркетинг</a></li>
+            <li><a href="courses.html">AI</a></li>
+          </ul>
+        </div>
+        <div>
+          <h4>Байланыс</h4>
+          <ul>
+            <li><a href="tel:+77271234567">+7 (727) 123-45-67</a></li>
+            <li><a href="mailto:info@skillforge.kz">info@skillforge.kz</a></li>
+          </ul>
+        </div>
+      </div>
+      <div class="footer__bottom">© 2026 SkillForge. Барлық құқықтар қорғалған.</div>
+    </div>
+  </footer>
+
+  <button class="scroll-top" aria-label="Жоғарыға">↑</button>
+  <script src="js/script.js"></script>
+</body>
+</html>
